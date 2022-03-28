@@ -24,7 +24,7 @@ python train.py /home/gb/yejunjie/mmt-coder/data-bin/en-fr \
 		--warmup-init-lr 1e-07 \
 		--update-freq 4 \
 		--adam-betas 0.9,0.98 \
-		--keep-last-epochs 30 \
+		--keep-last-epochs 20 \
 		--dropout 0.3 \
 		--tensorboard-logdir results/en-de-bpe/bl_log1 \
 		--log-format simple \
