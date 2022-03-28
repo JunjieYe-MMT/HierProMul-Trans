@@ -1,8 +1,6 @@
 #!/bin/bash
-#  /home/gb/yejunjie/MultimodalMixed-MMT-main/data-bin/de-en
-# --arch transformer_iwslt_de_en \ /home/gb/yejunjie/mmt-coder/data-bin/en-de
-#python train.py data-bin/de-en \
-python train.py /home/gb/yejunjie/mmt-coder/data-bin/en-de \
+
+python train.py /data-bin/en-de \
 		--arch transformer_iwslt_de_en \
 		--share-decoder-input-output-embed \
 		--clip-norm 0 \
@@ -28,7 +26,7 @@ python train.py /home/gb/yejunjie/mmt-coder/data-bin/en-de \
 		--dropout 0.3 \
 		--tensorboard-logdir results/en-de-bpe/bl_log1 \
 		--log-format simple \
-		--save-dir results/pre_mixup/mmtimg-1 \
+		--save-dir results/mmtimg \
 		--eval-bleu \
 		--eval-bleu-remove-bpe \
 		--patience 15 \
