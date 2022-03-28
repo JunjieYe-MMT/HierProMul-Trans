@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# --arch transformer_iwslt_de_en \
 #python train.py data-bin/de-en \
 python train.py /home/gb/yejunjie/mmt-coder/data-bin/en-fr \
 		--arch transformer_iwslt_de_en \
