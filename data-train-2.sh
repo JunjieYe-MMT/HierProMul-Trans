@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#python train.py data-bin/de-en \
-python train.py /home/gb/yejunjie/mmt-coder/data-bin/en-fr \
+
+python train.py data-bin/en-fr \
 		--arch transformer_iwslt_de_en \
 		--share-decoder-input-output-embed \
 		--clip-norm 0 \
@@ -27,7 +27,7 @@ python train.py /home/gb/yejunjie/mmt-coder/data-bin/en-fr \
 		--dropout 0.3 \
 		--tensorboard-logdir results/en-de-bpe/bl_log1 \
 		--log-format simple \
-		--save-dir results/pre_mixup/mmtimg-2 \
+		--save-dir results/mmtimg-2 \
 		--eval-bleu \
 		--eval-bleu-remove-bpe \
 		--patience 15 \
