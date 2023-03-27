@@ -1,5 +1,5 @@
 # HierProMul-Trans
-Hierarchical Progressive Multi-modal Transformer with Modality Difference-Aware for Multi-modal Neural Machine Translation
+Layer-level Progressive Transformer with Modality Difference Awareness for Multi-modal Neural Machine Translation
 ## Requirements
 ubuntu  
 cuda==11.2  
